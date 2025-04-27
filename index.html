@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+            /* Added more space after the list */
+        }
+
+        .feature-list li {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .feature-list li::before {
+            content: "- ";
+            margin-right: 5px;
+        }
+
+        /* Added space between last list item and project tools */
+        .feature-list li:last-child {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hello, I'm <span class="highlight">Kgotsofatso DIGNITY</span></h1>
+                    <p class="tagline">Computer Science Student & Web Developer</p>
+                    <p class="intro">Welcome to my portfolio! I'm passionate about creating user-friendly interfaces and
+                        solving problems through code.</p>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <!-- Updated to use local image file -->
+                        <img src="images/profile-photo.jpg" alt="Kgotsofatso DIGNITY">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Academic Background</h3>
+                    <p>I am currently pursuing a degree in Computer Science at the University of Venda. My coursework
+                        includes Human-Computer Interaction, Web Development, Data Structures, and Algorithms.</p>
+
+                    <h3>Skills & Tools</h3>
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h4>Programming Languages</h4>
+                            <ul class="skill-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Tools & Technologies</h4>
+                            <ul class="skill-list">
+                                <li>Git & GitHub</li>
+                                <li>VS Code</li>
+                                <li>Responsive Design</li>
+                                <li>UI/UX Design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>Career Goals</h3>
+                    <p>I aim to become a full-stack developer specializing in creating accessible and user-friendly web
+                        applications. I'm particularly interested in applying HCI principles to develop interfaces that
+                        enhance user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://i.postimg.cc/65V6fGjG/image.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Student Accommodation Website</h3>
+                        <p>A responsive residence website for student accommodation with affordable res prices listings,
+                            residence images, and book your accommodation functionality.</p>
+                        <div class="project-tools">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="btn-small">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://i.postimg.cc/QNmQm99C/image.png" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Website application</h3>
+                        <p>This is a website application that functions as a virus scanner</p>
+                        <ul class="feature-list">
+                            <li>Virus scanning capability to detect threats in files</li>
+                            <li>Quarantine system for isolating suspicious files</li>
+                            <li>Threat detection and removal capabilities</li>
+                            <li>System status monitoring</li>
+                            <li>Scan history tracking</li>
+                        </ul>
+                        <!-- Added a spacer div for extra separation -->
+                        <div style="height: 15px;"></div>
+
+                        <div class="project-tools">
+                            <span>HTML</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>SQLAlchemy</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://ngwenyaa-1.onrender.com" class="btn-small" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:dignity1088@gmail.com">dignity1088@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/dignithy" target="_blank">github.com/dignithy</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/mr-kd-makatšhaba-20762a275" target="_blank">MR KD
+                            MAKATSHABA</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-facebook"></i>
+                        <a href="https://www.facebook.com/KgotsoFatso.Dignity" target="_blank">KgotsoFatso Dignity</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.instagram.com/kgotsofatso_dignity/"
+                            target="_blank">@kgotsofatso_dignity</a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kgotso DIY. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/dignithy" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mr-kd-makatšhaba-20762a275" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/KgotsoFatso.Dignity" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kgotsofatso_dignity/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
